@@ -1,0 +1,137 @@
+*, h1, h2 { 
+  font: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  
+}
+
+/* navbar */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: url(./images/your_verse_hero.jpg) bottom center;
+  width: 80%;
+  height: 600px;
+  margin: auto;
+}
+
+.navbar {
+  margin: 20px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: radial-gradient(rgb(73, 73, 73), gray);
+  border-radius: 5px;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 100px;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px;
+  flex: 1;
+  border-right: solid 1px rgb(73, 73, 73);
+  height: 20px;
+}
+
+li span {
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+li:hover {
+  background-color: rgb(73, 73, 73);
+  background-clip: border-box;
+  border-right: solid 1px rgb(73, 73, 73);
+
+}
+
+.first:hover {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.fa-apple {
+  text-align: center;
+}
+
+.final {
+  border-right: none;
+}
+
+.final:hover {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+input {
+  background-color: transparent;
+  border-radius: 5px;
+  border-color: rgb(73, 73, 73);
+}
+
+.navbar li:last-child i {
+  position: relative;
+  left: 30px;
+  font-size: 1em;
+  color: darkgray;
+}
+
+
+
+/* hero */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20%;
+}
+
+section > * {
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 300%;
+  font-weight: 100;
+}
+
+.verse {
+  text-decoration: none;
+  font-size: 125%;
+}
+
+.verse:hover {
+  text-decoration: underline;
+}
+
+/* thumbnails */
+
+main {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+
+main > * {
+  flex: 1 1 0;
+  display: flex;
+}
+
+main div img {
+  width: 100%;
+}
